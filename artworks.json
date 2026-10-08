@@ -2,7 +2,31 @@
   {
     "title": "Moonlight Skateboard Superstar",
     "image": "images/moon-cat.png",
-    "prompt": "A fluffy orange cat skateboarding on the moon, cartoon style.",
-    "category": "Space Adventures"
+    "prompt": "A fluffy orange cat skateboarding on the moon, cartoon style."
+  },
+  {
+    "title": "Artwork 2",
+    "image": "",
+    "prompt": "Your amazing prompt will appear here!"
+  },
+  {
+    "title": "Artwork 3",
+    "image": "",
+    "prompt": "Your amazing prompt will appear here!"
+  },
+  {
+    "title": "Artwork 4",
+    "image": "",
+    "prompt": "Your amazing prompt will appear here!"
+  },
+  {
+    "title": "Artwork 5",
+    "image": "",
+    "prompt": "Your amazing prompt will appear here!"
+  },
+  {
+    "title": "Artwork 6",
+    "image": "",
+    "prompt": "Your amazing prompt will appear here!"
   }
 ]

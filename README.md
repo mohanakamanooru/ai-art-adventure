@@ -1,36 +1,42 @@
-# AI Art Adventure 🎨
+# AI Art Adventure — Careers Week Gallery
 
-A colourful, static GitHub Pages art gallery for Careers Week (Year 5 and Year 6).
+A colourful, responsive static website containing exactly six artwork cards: **Moonlight Skateboard Superstar** and five slots for children's creative work.
 
-## Publish with GitHub Pages
+## Quick preview
 
-1. Create a **public** GitHub repository called `ai-art-adventure`.
-2. Upload everything in this folder into the **root of the repository** (not inside another `ai-art-adventure` folder).
-3. Commit the files to the `main` branch.
-4. Go to **Settings → Pages → Build and deployment**. Choose **Deploy from a branch**, `main`, `/ (root)`, then **Save**.
-5. Wait for deployment. Your site should be at `https://YOUR-USERNAME.github.io/ai-art-adventure/`.
+Double-click `index.html` to see all six gallery cards even without a local server. **Note:** A direct `file://` preview uses the built-in six-card example data. To see edits to `artworks.json` locally, run a local server in this folder:
 
-## Add more artwork
+```bash
+python3 -m http.server 8000
+```
 
-1. Place teacher-approved image files into `images/` (e.g. `robot-pancakes.png`).
-2. Add an object to the array in `artworks.json`, separating entries with commas:
+Then open http://localhost:8000/ in your browser.
+
+## Add a child's artwork (no coding tools needed)
+
+1. Save the school-approved AI artwork as `artwork-2.png`, `artwork-3.png`, etc.
+2. Upload the file into `images/` using GitHub's **Add file → Upload files** control (or put the file there locally).
+3. Open `artworks.json` in GitHub and click the pencil **Edit** icon.
+4. For that artwork, replace its `title`, `image`, and `prompt` fields. For example:
 
 ```json
 {
-  "title": "Robot Pancake Chef",
-  "image": "images/robot-pancakes.png",
-  "prompt": "A friendly robot flipping pancakes in a spaceship, cartoon style.",
-  "category": "Funny Robots"
+  "title": "Rainbow Rocket",
+  "image": "images/artwork-2.png",
+  "prompt": "A rainbow rocket flying through a galaxy of jellybeans, cartoon style."
 }
 ```
 
-3. Commit the changes. GitHub Pages will update the gallery automatically.
+5. **Commit changes**. GitHub Pages will update automatically after deployment. Repeat for artwork 3–6.
 
-## Child safety
+Keep the quotation marks and commas intact, and use the exact file name including extension. The image area is square and crops images to fit.
 
-- Obtain school approval before publishing artwork on a public site.
-- Do **not** publish children's names, photographs, school details, or any identifying information.
-- Review both images and prompts before publishing.
-- If you prefer not to share a public gallery, ask your school about an access-controlled alternative. GitHub Pages websites in public repositories are publicly viewable.
+## Publish with GitHub Pages
 
-No frameworks, tracking scripts, or paid services are required.
+Create a public GitHub repository, upload these files to the root of the `main` branch, then open **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, **main**, **/(root)**, and save.
+
+The URL should be `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/` after publishing completes.
+
+## Privacy
+
+Get school approval for every image and prompt before publishing. Do not include children's names, faces, school details, or other identifying information in this public website.
