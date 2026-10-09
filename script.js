@@ -7,7 +7,8 @@ const previewArtworks = [
 
 function renderGallery(artworks) {
   grid.replaceChildren();
-  for (let i = 0; i < 6; i++) {
+  const total = artworks.length;
+  for (let i = 0; i < total; i++) {
     const art = artworks[i] || { title: `Artwork ${i + 1}`, image: '', prompt: 'Prompt coming soon!' };
     const card = document.createElement('article');
     card.className = 'art-card';
@@ -25,7 +26,7 @@ function renderGallery(artworks) {
     body.className = 'card-body';
     const label = document.createElement('span');
     label.className = 'label';
-    label.textContent = `CREATION ${i + 1} OF 6`;
+    label.textContent = `CREATION ${i + 1} OF ${total}`;
     const title = document.createElement('h3');
     title.textContent = art.title || `Artwork ${i + 1}`;
     const promptLabel = document.createElement('div');
@@ -44,9 +45,10 @@ function createPlaceholder(i) {
   placeholder.className = 'image-placeholder';
   placeholder.setAttribute('role', 'img');
   placeholder.setAttribute('aria-label', `Artwork ${i + 1} image coming soon`);
+  const icons = ['🐱', '🎨', '🚀', '🌈', '🪄', '✨'];
   const symbol = document.createElement('span');
   symbol.className = 'placeholder-icon';
-  symbol.textContent = ['🐱', '🎨', '🚀', '🌈', '🪄', '✨'][i];
+  symbol.textContent = icons[i % icons.length];
   const message = document.createElement('strong');
   message.textContent = 'Your artwork goes here!';
   placeholder.append(symbol, message);
