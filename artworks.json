@@ -1,62 +1,152 @@
 [
-  {
-    "title": "Artwork 1",
-    "image": "images/image1.png",
-    "prompt": "A girl with green hair and purple dress dancing on a beach with a sunset in the background in anime style"
-  },
-  {
-    "title": "Artwork 2",
-    "image": "images/image2.png",
-    "prompt": "generate an image of a  Dragon dancing in a jungle in a 3d style"
-  },
-  {
-    "title": "Artwork 3",
-    "image": "images/image3.png",
-    "prompt": "create an image of fluffy beige hamster with sunglasses drinking coconut water in a paradise islandwith palm tree blue ocean and sunny clear skies in a cartoon style"
-  },
-  {
-    "title": "Artwork 4",
-    "image": "images/image4.png",
-    "prompt": "Generate an image of Mr.tumble doing gymnastics in a viking boat in a tomato sause river with a spheghetti dragon"
-  },
-  {
-    "title": "Artwork 5",
-    "image": "images/image5.png",
-    "prompt": "A cat family on holiday swimming with sea animals in cartoon style"
-  },
-  {
-    "title": "Artwork 6",
-    "image": "images/image6.png",
-    "prompt": "Patrick star fish belly bouncing on a whales belly in the middles of a sead in realistic style"
-  },
-  {
-    "title": "Artwork 7",
-    "image": "images/image7.png",
-    "prompt": "Generate an image of a rainbow banana in a space suit eating pasta in space on mars keep it realistic"
-  },
-  {
-    "title": "Artwork 8",
-    "image": "images/image8.png",
-    "prompt": "create an image with a fluffy cat eating chips on the moon in cartoon background with stars and planets."
-  },
-  {
-    "title": "Artwork 9",
-    "image": "images/image9.png",
-    "prompt": "Create a little small duck sitting on a birthday cake that says Rebecca in the milky way floating smoothly in Anime style"
-  },
-  {
-    "title": "Artwork 10",
-    "image": "images/image10.png",
-    "prompt": "A hydra , fire , water dragon has 3 heads breathing fire in hill in water castle and anime comic book style"
-  },
+    {
+        "title": "Artwork 4",
+        "image": "images/image4.png",
+        "prompt": "Generate an image of Mr.tumble doing gymnastics in a viking boat in a tomato sause river with a spheghetti dragon"
+    },
+    {
+        "title": "Artwork 17",
+        "image": "images/image17.png",
+        "prompt": "Create an image of a duck dressed as a dinosaur in a toilet on the moon, clay style."
+    },
+    {
+        "title": "Artwork 7",
+        "image": "images/image7.png",
+        "prompt": "Generate an image of a rainbow banana in a space suit eating pasta in space on mars keep it realistic"
+    },
+    {
+        "title": "Artwork 27",
+        "image": "images/image27.png",
+        "prompt": "Create an image of a purple pancake queen elegantly dancing on a pancake."
+    },
+    {
+        "title": "Artwork 30",
+        "image": "images/image30.png",
+        "prompt": "Create an image of a plate of macaroni with arms and legs doing a dance in the oven in a 3D style."
+    },
+    {
+        "title": "Artwork 25",
+        "image": "images/image25.png",
+        "prompt": "A superhero banana in Springfield eating McDonald's in a cartoon style."
+    },
+    {
+        "title": "Artwork 9",
+        "image": "images/image9.png",
+        "prompt": "Create a little small duck sitting on a birthday cake that says Rebecca in the milky way floating smoothly in Anime style"
+    },
+    {
+        "title": "Artwork 16",
+        "image": "images/image16.png",
+        "prompt": "Snoopy with the pink bowl is swimming there in pink soup realistic style"
+    },
+    {
+        "title": "Artwork 15",
+        "image": "images/image15.png",
+        "prompt": "Create an image of a dragon jellycat sleeping in an underwater castle with rainbow spikes and a blue body."
+    },
+    {
+        "title": "Artwork 12",
+        "image": "images/image12.png",
+        "prompt": "A green cute dinosaur with two eyes playing football in outer space"
+    },
+    {
+        "title": "Artwork 28",
+        "image": "images/image28.png",
+        "prompt": "Make an image of a purple and blue turtle on top of Mount Everest dancing in realistic style."
+    },
+    {
+        "title": "Artwork 8",
+        "image": "images/image8.png",
+        "prompt": "create an image with a fluffy cat eating chips on the moon in cartoon background with stars and planets."
+    },
+    {
+        "title": "Artwork 20",
+        "image": "images/image20.png",
+        "prompt": "Create an image of a dog in the planet outer space."
+    },
+    {
+        "title": "Artwork 29",
+        "image": "images/image29.png",
+        "prompt": "Create an image of a cat wearing a pumpkin costume riding its bike in a spooky castle realistic style"
+    },
+    {
+        "title": "Artwork 10",
+        "image": "images/image10.png",
+        "prompt": "A hydra , fire , water dragon has 3 heads breathing fire in hill in water castle and anime comic book style"
+    },
     {
         "title": "Artwork 11",
         "image": "images/image11.png",
         "prompt": "create an image of black dragon with green eyes and big wing and long tail breathing fire at a gloomy dark castle in the air in the castles garden ina realistic style"
     },
     {
-        "title": "Artwork 12",
-        "image": "images/image12.png",
-        "prompt": "A green cute dinosaur with two eyes playing football in outer space"
+        "title": "Artwork 26",
+        "image": "images/image26.png",
+        "prompt": "Create an image of a vampire snake, perched up, ready to strike at the screen in a dark, gloomy forest in a realistic style."
+    },
+    {
+        "title": "Artwork 2",
+        "image": "images/image2.png",
+        "prompt": "generate an image of a  Dragon dancing in a jungle in a 3d style"
+    },
+    {
+        "title": "Artwork 13",
+        "image": "images/image13.png",
+        "prompt": "Create an image of a monkey doing a backflip from the bedroom window in 3D style."
+    },
+    {
+        "title": "Artwork 21",
+        "image": "images/image21.png",
+        "prompt": "Create an image of a cheetah knitting an orange and a purple scarf in a plain field with a small river in the background and a few trees."
+    },
+    {
+        "title": "Artwork 14",
+        "image": "images/image14.png",
+        "prompt": "Create an image of Ratatouille making fried rice in the kitchen by the cooker in cartoon style."
+    },
+    {
+        "title": "Artwork 6",
+        "image": "images/image6.png",
+        "prompt": "Patrick star fish belly bouncing on a whales belly in the middles of a sead in realistic style"
+    },
+    {
+        "title": "Artwork 24",
+        "image": "images/image24.png",
+        "prompt": "A beige horse exploring the streets of Jamaica, wearing a Jamaican football strip."
+    },
+    {
+        "title": "Artwork 3",
+        "image": "images/image3.png",
+        "prompt": "create an image of fluffy beige hamster with sunglasses drinking coconut water in a paradise islandwith palm tree blue ocean and sunny clear skies in a cartoon style"
+    },
+    {
+        "title": "Artwork 5",
+        "image": "images/image5.png",
+        "prompt": "A cat family on holiday swimming with sea animals in cartoon style"
+    },
+    {
+        "title": "Artwork 1",
+        "image": "images/image1.png",
+        "prompt": "A girl with green hair and purple dress dancing on a beach with a sunset in the background in anime style"
+    },
+    {
+        "title": "Artwork 19",
+        "image": "images/image19.png",
+        "prompt": "A blonde and ginger puppy dancing in the park in comic style."
+    },
+    {
+        "title": "Artwork 18",
+        "image": "images/image18.png",
+        "prompt": "A Labrador chocolate dog exploring a house on my bed snoring in oil painting"
+    },
+    {
+        "title": "Artwork 22",
+        "image": "images/image22.png",
+        "prompt": "Light blue bunny eating a carrot in a field and make it look realistic."
+    },
+    {
+        "title": "Artwork 23",
+        "image": "images/image23.png",
+        "prompt": "create a cute blue butterfly that is flying in a field of flowers, tulips and daisies in a pencil sketch"
     }
 ]
