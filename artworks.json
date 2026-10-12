@@ -5,11 +5,6 @@
         "prompt": "A girl with green hair and purple dress dancing on a beach with a sunset in the background in anime style"
     },
     {
-        "title": "Artwork 30",
-        "image": "images/image30.png",
-        "prompt": "Create an image of a plate of macaroni with arms and legs doing a dance in the oven in a 3D style."
-    },
-    {
         "title": "Artwork 2",
         "image": "images/image2.png",
         "prompt": "generate an image of a  Dragon dancing in a jungle in a 3d style"
@@ -148,5 +143,10 @@
         "title": "Artwork 29",
         "image": "images/image29.png",
         "prompt": "Create an image of a cat wearing a pumpkin costume riding its bike in a spooky castle realistic style"
+    },
+    {
+        "title": "Artwork 30",
+        "image": "images/image30.png",
+        "prompt": "Create an image of a plate of macaroni with arms and legs doing a dance in the oven in a 3D style."
     }
 ]
