@@ -1,37 +1,178 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A colourful gallery of imaginative AI artwork from our Careers Week adventure." />
-  <title>AI Art Adventure | Careers Week</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Monster Adventure</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      text-align: center;
+      background: #b7e8a5;
+      color: #203d2b;
+    }
+    h1 { background: #347b48; color: white; padding: 18px; margin: 0; }
+    main { max-width: 500px; margin: 20px auto; padding: 15px; }
+    .field {
+      background: #6abf69;
+      border: 5px solid #347b48;
+      border-radius: 12px;
+      padding: 24px 10px;
+      min-height: 150px;
+    }
+    #creature { font-size: 75px; margin: 12px; }
+    button {
+      font: bold 16px monospace;
+      padding: 12px 16px;
+      margin: 6px;
+      border: 3px solid #347b48;
+      border-radius: 8px;
+      background: #fff5c4;
+      cursor: pointer;
+    }
+    button:hover { background: #ffe477; }
+    .panel {
+      background: #f4ffe9;
+      border: 3px solid #347b48;
+      border-radius: 10px;
+      margin-top: 15px;
+      padding: 12px;
+    }
+    #message { min-height: 40px; font-size: 15px; }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <nav><span class="brand">✨ AI ART ADVENTURE</span><span class="week">CAREERS WEEK</span></nav>
-    <div class="hero-inner">
-      <p class="eyebrow">WELCOME TO OUR GALLERY 🎨</p>
-      <h1>Big imaginations.<br/><span>Brilliant creations.</span></h1>
-      <p class="intro">We imagined it, wrote a prompt, and used AI to bring our ideas to life! Explore our creative masterpieces below.</p>
-      <a class="jump" href="#gallery">Explore the artwork ↓</a>
-    </div>
-    <div class="wave" aria-hidden="true"></div>
-  </header>
-  <main>
-    <section id="gallery" class="gallery-section">
-      <p class="eyebrow orange">MADE WITH IMAGINATION</p>
-      <h2>Our Amazing AI Art Gallery 🌈</h2>
-      <p class="section-intro">Every picture started with a creative idea and a carefully written prompt.</p>
-      <div id="art-grid" class="art-grid" aria-live="polite"></div>
-    </section>
-    <section class="how">
-      <h2>How did we make these? 🪄</h2>
-      <div class="steps"><div><strong>1. Imagine 💭</strong><p>Think of something amazing.</p></div><div><strong>2. Prompt ✏️</strong><p>Describe who, what, where and style.</p></div><div><strong>3. Create 🎨</strong><p>Use AI to make a picture.</p></div><div><strong>4. Test 🔎</strong><p>Check if it matches your idea!</p></div></div>
-    </section>
-  </main>
-  <footer><p>Made for Careers Week 💛 &nbsp;·&nbsp; Curious minds make brilliant things!</p><p class="privacy">Artwork shown with school approval. No student names or personal details are published.</p></footer>
-  <script src="script.js"></script>
+
+<h1>🌿 Mini Monster Adventure 🌿</h1>
+
+<main>
+  <div class="field">
+    <div>Wild grass is rustling...</div>
+    <div id="creature">🌱</div>
+    <h2 id="name">Green Meadow</h2>
+    <div id="hp">Explore to find a creature!</div>
+  </div>
+
+  <div>
+    <button onclick="explore()">🌿 Explore</button>
+    <button onclick="catchCreature()">🔴 Catch</button>
+    <button onclick="battle()">⚔️ Battle</button>
+  </div>
+
+  <div class="panel">
+    <h3>📣 Adventure</h3>
+    <p id="message">Welcome! Explore the grass to begin.</p>
+  </div>
+
+  <div class="panel">
+    <h3>🎒 Your Team</h3>
+    <p id="team">No creatures yet!</p>
+    <p id="count">Caught: 0</p>
+  </div>
+</main>
+
+<script>
+  const wildCreatures = [
+    { name: "Leafy", emoji: "🌿", hp: 20 },
+    { name: "Flameling", emoji: "🔥", hp: 25 },
+    { name: "Bubbloon", emoji: "💧", hp: 22 },
+    { name: "Sparky", emoji: "⚡", hp: 18 },
+    { name: "Rocko", emoji: "🪨", hp: 30 },
+    { name: "Mushbud", emoji: "🍄", hp: 24 }
+  ];
+
+  let team = [];
+  let wild = null;
+  let found = false;
+
+  function explore() {
+    if (found) {
+      document.getElementById("message").textContent =
+              "A wild creature is already here! Catch it or battle it.";
+      return;
+    }
+
+    if (Math.random() < 0.25) {
+      document.getElementById("creature").textContent = "🌱";
+      document.getElementById("name").textContent = "Quiet Meadow";
+      document.getElementById("hp").textContent = "No creatures appeared.";
+      document.getElementById("message").textContent =
+              "Nothing appeared. Try exploring again!";
+      return;
+    }
+
+    wild = { ...wildCreatures[Math.floor(Math.random() * wildCreatures.length)] };
+    found = true;
+    document.getElementById("creature").textContent = wild.emoji;
+    document.getElementById("name").textContent = "Wild " + wild.name;
+    document.getElementById("hp").textContent = "HP: " + wild.hp;
+    document.getElementById("message").textContent =
+            "A wild " + wild.name + " appeared! Try catching it!";
+  }
+
+  function catchCreature() {
+    if (!found || !wild) {
+      document.getElementById("message").textContent =
+              "Explore first to find a wild creature!";
+      return;
+    }
+
+    if (Math.random() < 0.7) {
+      team.push(wild);
+      document.getElementById("message").textContent =
+              "Gotcha! " + wild.name + " joined your team!";
+      updateTeam();
+      found = false;
+      wild = null;
+      document.getElementById("creature").textContent = "✨";
+      document.getElementById("name").textContent = "Success!";
+      document.getElementById("hp").textContent = "Ready for another adventure!";
+    } else {
+      document.getElementById("message").textContent =
+              wild.name + " escaped the capture ball! Try again!";
+    }
+  }
+
+  function battle() {
+    if (!found || !wild) {
+      document.getElementById("message").textContent =
+              "Find a wild creature before battling!";
+      return;
+    }
+
+    if (team.length === 0) {
+      document.getElementById("message").textContent =
+              "You need to catch a creature first!";
+      return;
+    }
+
+    let damage = Math.floor(Math.random() * 10) + 6;
+    wild.hp -= damage;
+
+    if (wild.hp <= 0) {
+      document.getElementById("message").textContent =
+              "You won! " + wild.name + " ran away. Explore for another!";
+      found = false;
+      wild = null;
+      document.getElementById("creature").textContent = "🏆";
+      document.getElementById("name").textContent = "Victory!";
+      document.getElementById("hp").textContent = "You won the battle!";
+    } else {
+      document.getElementById("hp").textContent = "HP: " + wild.hp;
+      document.getElementById("message").textContent =
+              "Your team attacked for " + damage + " damage!";
+    }
+  }
+
+  function updateTeam() {
+    document.getElementById("team").textContent =
+            team.map(c => c.emoji + " " + c.name).join(" · ");
+    document.getElementById("count").textContent =
+            "Caught: " + team.length;
+  }
+</script>
+
 </body>
 </html>
-<!-- trigger GitHub Pages deployment -->
